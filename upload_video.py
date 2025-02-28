@@ -23,7 +23,7 @@ credentials = Credentials(
 youtube = build("youtube", "v3", credentials=credentials)
 
 # Video details
-video_file = "video.mp4"  # Replace with your actual video file name
+video_file = "श्री हनुमान चालीसा Hanuman Chalisa I GULSHAN KUMAR I HARIHARAN, Full.mp4"  # Replace with your actual video file name
 request_body = {
     "snippet": {
         "title": "श्री हनुमान चालीसा 1 Hour loop Series | Shree Hanuman Chalisa Video",
