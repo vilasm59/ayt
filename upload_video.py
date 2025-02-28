@@ -24,7 +24,7 @@ credentials = Credentials(
 youtube = build("youtube", "v3", credentials=credentials)
 
 # Video details
-video_file = "श्री हनुमान चालीसा 1 Hour loop Series | Shree Hanuman Chalisa Video.mp4"
+video_file = "video.mp4"
 request_body = {
     "snippet": {
         "title": "श्री हनुमान चालीसा 1 Hour loop Series | Shree Hanuman Chalisa Video",
@@ -81,7 +81,7 @@ Copyright Disclaimer: - Under section 107 of the copyright Act 1976, allowance i
         "categoryId": "24"  # Category 22 = People & Blogs
     },
     "status": {
-        "privacyStatus": "public",  # Options: 'public', 'unlisted', 'private'
+        "privacyStatus": "unlisted",  # Options: 'public', 'unlisted', 'private'
     }
 }
 
