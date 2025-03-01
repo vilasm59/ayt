@@ -20,9 +20,12 @@ jobs:
       - name: Install dependencies
         run: pip install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client requests
 
-      - name: Download video file
+      - name: Download video from Google Drive
         run: |
-          wget -O video.mp4 "https://your-server.com/video.mp4"  # Replace with your actual video URL
+          FILE_ID="1hTozBu_-VZNWRj3G8SQB3ya-HtdknwFQ"
+          FILE_NAME="video.mp4"
+          wget --no-check-certificate "https://drive.google.com/uc?export=download&id=$FILE_ID" -O $FILE_NAME
+
 
       - name: Upload video to YouTube
         env:
